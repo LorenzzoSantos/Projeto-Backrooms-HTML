@@ -7,3 +7,28 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+const usuariosValidos = {
+    "Lorenzzo": "230511",
+    "Erly": "Gay",
+    "Rodrigo": "MatarAula"
+};
+
+
+var loginForm = document.querySelector('#id01 form');
+
+loginForm.addEventListener('submit', function(event){
+    event.preventDefault();
+
+    var usuario = loginForm.uname.value.trim();
+    var senha = loginForm.psw.value;
+
+    if (usuariosValidos.hasOwnProperty(usuario)&&usuariosValidos[usuario]===senha){
+        alert("Sucesso!!!");
+        modal.style.display = "none";
+        loginForm.reset();
+    }else{alert("usuario incorreto :(");
+
+    }
+     
+});
