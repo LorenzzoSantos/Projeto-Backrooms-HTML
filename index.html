@@ -5,15 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
+  <div style="text-align: center;" id="tela-inicial">
 <h2>Clica aqui pra login pai</h2>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; display: block; margin: 20px auto;">Login</button>
 
-<div id="secreto">
-  <p>Pedro ERLY</p>
+<h2>(Sem login tu n vai ter acesso aos bglh tlgd)</h2>
 </div>
-
+<div id="secreto">
+  <h1>A LENDA DE PEDRO ERLY</h1>
+  <p>Dizem nos fóruns mais obscuros da Deep Web que Pedro Erly não é apenas um programador, mas sim uma entidade digital. Ele supostamente aprendeu HTML antes mesmo da internet discada existir, codificando seu primeiro site no painel de um microondas usando apenas os bipes de 30 segundos. Ele é o verdadeiro mestre do front-end. Pedro nunca precisou usar display: flex; ou margin: auto; — os elementos da tela simplesmente se alinham no centro por puro respeito e pavor quando ele encara o monitor.</p>
+    <p></p>
+    <p>* Os grandes feitos do mito:</p>
+    <p></p>
+    <p>* O Rei do CSS: Ele uma vez centralizou uma div usando telepatia, sem encostar no teclado.</p>
+    <p></p>
+    <p>* Segurança Máxima: Aquela mensagem "Bota tua senha lixo" no seu formulário? Foi inspirada nele. Para Pedro Erly, qualquer criptografia militar é "lixo", pois ele consegue invadir bancos de dados usando apenas uma calculadora de padaria e um cabo de rede mastigado.</p>
+    <p></p>
+    <p>* O Easter Egg: A lenda conta que se você apertar F12 no seu site, for na aba Console e digitar o nome dele três vezes meia-noite, todos os seus bugs de JavaScript desaparecem na mesma hora.</p>
+</div>
 <div id="id01" class="modal">
   <form class="modal-content animate" action="" method="post">
     <div class="imgcontainer">
@@ -26,7 +36,7 @@
       <input type="text" placeholder="Bota o nome aí cara" name="uname" id="nome">
 
       <label for="psw"><b>Senha</b></label>
-      <input type="password" placeholder="Bota tua senha lixo" name="psw" id="senha">
+      <input type="password" placeholder="Bota tua senha paizudo" name="psw" id="senha">
         
       <button type="submit" onclick="login()">Login</button>
       <label>
@@ -35,8 +45,8 @@
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw"><a href="#">Esqueceu a senha lixão?</a></span>
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+      <span class="psw"><a href="#">Esqueceu a senha? Relaxa e agacha</a></span>
     </div>
   </form>
 </div>

@@ -1,4 +1,19 @@
-body {font-family: Arial, Helvetica, sans-serif;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+body.fundo-logado {
+  background-image: url('fluter.jpg'); /* Se a imagem estiver dentro da pasta css/ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -12,11 +27,13 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-  background-color: blue;
+  background-color: #04AA6D;
   color: white;
-  padding: 14px 20px;
+  padding: 20px 40px;
   margin: 8px 0;
-  border: none;
+  border-style: solid;
+  border-width: 0.25px;
+  border-radius: 10px;
   cursor: pointer;
   width: 100%;
 }
@@ -71,6 +88,20 @@ span.psw {
 #secreto {
   display: none;
   position: fixed;
+  max-width: 650px;             /* Define uma largura máxima elegante */
+  background-color: #F4DBD8;     /* Cor de fundo do quadrado */
+  padding: 30px;                /* Espaço interno pro texto "respirar" */
+  border-radius: 12px;          /* Arredonda as pontas do quadrado */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Sombra pra dar efeito 3D */
+  border: 1px solid #e0e0e0;     /* Bordinha discreta */
+  line-height: 1.6;             /* Melhora o espaçamento entre as linhas */
+  margin: 20px auto;
+  position: absolute; /* Obrigatório para a caixa se mover livremente */
+  cursor: grab;       /* Mãozinha aberta indicando que dá pra pegar */
+  user-select: none;
+}
+#secreto:active {
+  cursor: grabbing;   /* Mãozinha fechada enquanto segura a caixa */
 }
 /* Modal Content/Box */
 .modal-content {
