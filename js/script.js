@@ -26,7 +26,11 @@ loginForm.addEventListener('submit', function(event){
     if (usuariosValidos.hasOwnProperty(usuario)&&usuariosValidos[usuario]===senha){
         alert("Sucesso!!!");
         modal.style.display = "none";
+        secreto.style.display = "block"
         loginForm.reset();
+
+        document.getElementById("secreto").style.display = "block";
+
     }else{alert("usuario incorreto :(");
 
     }
